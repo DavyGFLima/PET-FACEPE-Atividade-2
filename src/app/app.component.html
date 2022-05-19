@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" href="app.component.css">
+</head> 
+<body>
+
+    <div>
+        <h1 id="titulo">Ficha de Cadastro</h1>
+        <h3 id="subtitulo">Preencha as informações</h3>
+        <br><br>
+    </div>
+
+    <form>
+    <h4 id="titulo">Dados Pessoais</h4>
+    <br>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" required>
+            </div>
+            <br>
+            
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite o seu sobrenome" required>
+            </div>
+        </fieldset>
+        <br>
+
+        <fieldset class="grupo">
+          <div class="campo">
+            <label for="nome"><strong>CPF:</strong></label>
+            <input type="text" name="text" id="text" placeholder="__.___.___" required>
+          </div>
+          <br>
+          <div class="campo">
+            <label for="nome"><strong>RG:</strong></label>
+            <input type="text" name="text" id="text" placeholder="___.___.___-__" required>
+          </div>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <div class="campo">
+                <label for="sexo"><strong>Sexo:</strong></label>
+                <br><br>
+              
+                <label><input type="radio" name="devWeb" value="fronted" ><strong>Masculino</strong></label>    
+                <label><input type="radio" name="devWeb" value="fronted" ><strong>Feminino</strong></label>    
+                <label><input type="radio" name="devWeb" value="fronted" ><strong>Outro</strong></label>
+               
+              </div>
+        </fieldset>
+    </form>
+        <br>
+        <form>
+          <div class="campo">
+          <strong>Data de nascimento:</strong> 
+          <input type="date" name="nascimento">
+          </div>
+        </form>
+        <br>
+
+        <form>
+          <h4 id="titulo">Dados de Endereço</h4>
+          <br>
+          <fieldset class="grupo">
+            
+            <div class="campo">
+              <label for="sobrenome"><strong>Estado:</strong></label>
+          
+            <select name="estado"> 
+              <option value="estado">Selecione seu Estado</option> 
+              <option value="ac">Acre</option> 
+              <option value="al">Alagoas</option> 
+              <option value="am">Amazonas</option> 
+              <option value="ap">Amapá</option> 
+              <option value="ba">Bahia</option> 
+              <option value="ce">Ceará</option> 
+              <option value="df">Distrito Federal</option> 
+              <option value="es">Espírito Santo</option> 
+              <option value="go">Goiás</option> 
+              <option value="ma">Maranhão</option> 
+              <option value="mt">Mato Grosso</option> 
+              <option value="ms">Mato Grosso do Sul</option> 
+              <option value="mg">Minas Gerais</option> 
+              <option value="pa">Pará</option> 
+              <option value="pb">Paraíba</option> 
+              <option value="pr">Paraná</option> 
+              <option value="pe">Pernambuco</option> 
+              <option value="pi">Piauí</option> 
+              <option value="rj">Rio de Janeiro</option> 
+              <option value="rn">Rio Grande do Norte</option> 
+              <option value="ro">Rondônia</option> 
+              <option value="rs">Rio Grande do Sul</option> 
+              <option value="rr">Roraima</option> 
+              <option value="sc">Santa Catarina</option> 
+              <option value="se">Sergipe</option> 
+              <option value="sp">São Paulo</option> 
+              <option value="to">Tocantins</option> 
+          </select>
+            </div>
+            <br>
+          
+            <div class="campo">
+                <label for="sobrenome"><strong>Cidade:</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite a sua cidade" required>
+            </div>
+        
+          </fieldset>
+          <br>
+        </form>
+
+        <fieldset class="grupo">
+
+            <div class="campo">
+              <label for="nome"><strong>Bairro:</strong></label>
+              <input type="text" name="text" id="text" placeholder="Digite o seu bairro" required>
+          </div>
+          <br>
+
+          <div class="campo">
+            <label for="nome"><strong>Rua:</strong></label>
+            <input type="text" name="text" id="text" placeholder="Digite o sua rua" required>
+        </div>
+        </fieldset>
+        <br>
+
+        <fieldset class="grupo">
+        <div class="campo">
+          <label for="nome"><strong>Número:</strong></label>
+            <input type="text" name="text" id="text" placeholder="Digite o número da casa" required>
+        </div>
+        <br>
+        
+        <div class="campo">
+          <label for="nome"><strong>Complemento:</strong></label>
+          <input type="text" name="text" id="text" placeholder="Digite o complemento" required>
+        </div>
+        <br>
+
+        </fieldset>
+        
+        <fieldset class="grupo">
+          <div class="campo">
+          <label for="nome"><strong>CEP:</strong></label>
+          <input type="text" name="text" id="text" placeholder="_____-___" required> 
+        </div>
+        </fieldset>
+        <br>
+
+        <form>
+          <h4 id="titulo">Dados do Login</h4>
+          <br>
+        <fieldset class="grupo">
+
+          <div class="campo">
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+        </div>
+        <br>
+
+          <div class="campo">
+            
+            <label for="nome"><strong>Imagem de perfil:</strong></label>
+            <form>
+           <!-- Para permitir seleção de multiplos arquivos: -->
+           <form>
+              <input type="file" name="arquivos" multiple>
+           </form>
+        </form>
+          </div>
+        </fieldset>
+        </form>
+        <br>
+
+        <fieldset class="grupo">
+          <div class="campo">
+            <label for="nome"><strong>Login de Usuário:</strong></label>
+            <input type="text" name="text" id="text" placeholder="Digite seu nome de usuário" required>
+          </div>
+        </fieldset>
+        <br>
+
+        <fieldset class="grupo">
+
+          <div class="campo">
+           <label for="nome"><strong>Digte sua senha:</strong></label>
+           <form>
+            <input type="password" name="senha" placeholder="Digite sua Senha" id="senha">
+           </form>
+          </div>
+
+          <div class="campo">
+           <label for="nome"><strong>Comfirme sua senha:</strong></label>
+           <form>
+            <input type="password" name="senha" placeholder="Digite sua Senha" id="senha">
+           </form>
+          </div>
+
+        </fieldset>
+        <br><br>
+          
+          <form>
+            <div>
+            <input class="botao" type="submit" value="Enviar ">
+            </div>
+            <div>
+            <input class="botao" type="reset" value="Limpar">
+            </div>
+          </form>
+
+</body>
+</html>
